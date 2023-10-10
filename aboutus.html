@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>E-commerce website about beekeeping</title>
+</head>
+<body>
+    <section id="header">
+        <img src="/bletariaImages/logo2.webp" class="logo" alt="Logo" onclick="myFunction()">
+        <h3 onclick="myFunction()">Bletaria Shytani</h3>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Kreu</a></li>
+                <li><a href="products.html">Produkte</a></li>
+                <li><a class="active" href="aboutus.html">Rreth Nesh</a></li>
+                <li><a href="contactus.html">Kontakt</a></li>
+                <li id="lg-bag"><i class="bi bi-bag" id="bag"></i></li>
+                <a href="#" id="close"><i class="bi bi-x"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i class="bi bi-bag" id="bag-mobile"></i>
+            <i id="bar" class="bi bi-list"></i>
+        </div>
+    </section>
+
+    <section id="page-header" class="aboutUs-header"> 
+    </section>
+
+    <section id="about-head" class="section-p1">
+    <img src="bletariaImages/shpresa1.jpg" alt="Fermere Shytani">
+    <div>
+        <h2>Kush jemi ne?</h2>
+        <p>Mirë se vini në Bletari Shytani, një biznes bletari 
+           në pronësi dhe operim familjar, i cili është përkushtuar 
+           ndaj praktikave të qëndrueshme dhe natyrore për më shumë 
+           se 10 vite. Pasioni ynë për bletët dhe mirëqenia 
+           e tyre filloi 20 vite më parë, kur fermere
+           Shpresa Shytani u interesua për herë të parë për 
+           ndërlikimet e bletarisë.
+
+           <abbr title="#">Ne besojmë se bletët luajnë një rol 
+            jetik në ekosistemin tonë dhe punojnë shumë për të 
+            promovuar mirëqenien e tyre përmes praktikave tona 
+            të bletarisë. Kosheret tona janë të vendosura 
+            në Shkoder, ku mund të ushqehen me një gamë 
+            të ndryshme bimësh, duke u ofruar klientëve tanë 
+            mjaltë të cilësisë më të lartë.</abbr>
+
+            <br><br>
+            
+            <marquee bgcolor="#ccc" loop="+1" 
+            scrollamount="5" width="100%">Mezi presim të ndajmë 
+            pasionin tonë për bletët me ju. </marquee>
+        </p>
+    </div>
+    </section>
+
+    <section id="about-vid" class="section-p1">
+        <h1>Nje video shpaluese e punes tone</h1>
+        <div class="video">
+            <video autoplay muted loop src="bletariaImages/Flow Hive honey harvesting.mp4"></video>
+        </div>
+    </section>
+
+    <section id="features" class="section-p1">
+        <div class="fe-box">
+            <img src="/bletariaImages/truckdelivery.svg" alt="Free Shipping">
+            <h6>Transporti falas</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="/bletariaImages/quality.webp" alt="Free Shipping">
+            <h6>Cilesi e garantuar</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="/bletariaImages/onlineorderpng.png" alt="Free Shipping">
+            <h6>Porosite online</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="/bletariaImages/bestprice.jpg" alt="Free Shipping">
+            <h6>Cmimet me te mira</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="/bletariaImages/customerservice.png" alt="Free Shipping">
+            <h6>Suport ndaj klientit</h6>
+        </div>
+    </section>
+
+  <!-- Cart -->
+
+  <section id="cart">
+    <a href="#" id="close-cart"><i class="bi bi-x"></i></a>
+    <h2>Cfare ke porositur ne shporten tende?</h2>
+    <p>Le te shohim!</p>
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">Produkti</span>
+        <span class="cart-price cart-header cart-column" >Cmimi</span>
+        <span class="cart-quantity cart-header cart-column">Sasia</span>
+    </div>
+
+    <!-- This section covers the entire row -->
+
+    <div class="cart-items">
+        <!-- This div is here just to give the idea of how the added products at the cart row would
+            look like -->
+
+         <!--
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img src="bletariaImages/mjalte lulesh.jpg" alt="Mjalte lulesh">
+                    <span class="cart-item-title">Mjalte lulesh</span>
+                </div>
+                <span class="cart-price cart-column cart-item-price">3000 ALL</span>
+                <div class="cart-item cart-column">
+                    <input class="cart-quantity-input" type="number" value="1"></td>
+                    <i class="bi bi-trash"></i>
+                </div>
+            </div> 
+        -->
+
+    </div>
+    <!-- This div covers the transport and cart's total -->
+
+    <div class="cart-total">
+        <strong>Transporti</strong>
+        <span>Falas</span>
+        <strong >Totali i kartes</strong> 
+        <span class="cart-total-price">0 All</span>
+    </div>
+    <button class="normal" id="purchase">Porosit</button>
+  </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="bletariaImages/logo2.webp" alt="logo">
+            <h4>Ku mund te na gjeni:</h4>
+            <p><strong>Adresa: </strong>Shtoj i ri, Shkoder</p>
+            <p><strong>Numri i telefonit: </strong>+355 68 574 3469</p>
+            <p><strong>Email: </strong>shpresashytani0@gmail.com</p>
+            <div class="follow">
+            <h4>Na ndiqni ne:</h4>
+            <div class="icons">
+                <a href="https://www.instagram.com/bletariajuaj/"><i class="bi bi-instagram"></i></a>
+            </div>
+            </div>
+        </div>
+
+        <div class="col" id="menu"> 
+            <h4>Menu</h4>
+            <a href="index.html">Kreu</a>
+            <a href="products.html">Produkte</a>
+            <a href="aboutus.html">Rreth Nesh</a>
+            <a href="contactus.html">Kontakt</a>
+        </div>
+
+        <div class="col-pagesa">
+            <h4>Pagesa te siguruara nepermjet:</h4>
+            <img src="bletariaImages/payment.jpg" alt="Menyra te sigurta pagese">
+        </div>
+
+        <div class="copyright">
+            <p>© 2023, Anjeza Xhelilaj - E-commerce website about beekeeping</p>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html> 

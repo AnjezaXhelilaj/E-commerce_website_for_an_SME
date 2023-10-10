@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="shop.js" async></script>
+    <title>E-commerce website about beekeeping</title>
+</head>
+<body>
+    <section id="header">
+        <img src="/bletariaImages/logo2.webp" class="logo" alt="Logo" onclick="myFunction()">
+        <h3 onclick="myFunction()">Bletaria Shytani</h3>
+        <div>
+            <ul id="navbar">
+                <li><a  href="index.html">Kreu</a></li>
+                <li><a class="active" href="products.html">Produkte</a></li>
+                <li><a href="aboutus.html">Rreth Nesh</a></li>
+                <li><a href="contactus.html">Kontakt</a></li>
+                <li id="lg-bag"><i class="bi bi-bag" id="bag"></i></li>
+                <a href="#" id="close"><i class="bi bi-x"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i class="bi bi-bag" id="bag-mobile"></i>
+            <i id="bar" class="bi bi-list"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="bletariaImages/mjalte lulesh.jpg" 
+            width="100%" id="MainImg" alt="Mjalte lulesh">
+
+        <div class="small-img-group">
+            <div class="small-img-col" onclick="window.location.href=`sproduct.html`;">
+                <img src="bletariaImages/mjalte lulesh.jpg" 
+                width="83%" class="small-img" alt="Mjalte lulesh">
+            </div>
+
+            <div class="small-img-col" onclick="window.location.href=`sproduct2.html`;">
+                <img src="bletariaImages/mjaltegeshtenje.jpg" 
+                width="98%" class="small-img" alt="Mjalte geshtenje">
+            </div>
+            
+            <div class="small-img-col" onclick="window.location.href=`sproduct3.html`;">
+                <img src="bletariaImages/qumeshtblete2.jpg" 
+                width="100%" height="100%" class="small-img" alt="Qumeshte blete">
+            </div>
+        </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Kreu/Produkte</h6>
+            <h4 class="shop-item-title">Mjalte lulesh</h4>
+            <h4>1 vazo 500 gr</h4>
+            <h2 class="shop-item-price">3000 ALL </h2>
+            <img class="shop-item-img" src="bletariaImages/mjalte lulesh.jpg" alt="Mjalte lulesh" hidden>
+            <button class="normal bi bi-cart" type="button"> Shto ne shporte</button>
+            <h4>Detaje mbi produktin</h4>
+            <span>Mjalti i lulëzimit është gjithmonë i pari që mblidhet 
+                 gjatë vitit në bletari. Bletët mbledhin nektarin e luleve nga 
+                 fillimi i pranverës deri në verë. Përmban përmasa mbizotëruese 
+                 nga lulja e farës së rapës, por edhe nektar nga shumë lule të tjera 
+                 të sezonit të hershëm.
+
+                Mjalti është me ngjyrë të verdhë të çelët, i butë në qëndrueshmërinë e tij
+                dhe ka një shije të butë të ëmbël. Mjalti i luleve natyrore ka përfitime
+                të pamohueshme në trajtimin e shumë sëmundjeve. Përmbajtja e tij kalorike 
+                lejon që produkti të përdoret në trajtimin e anemisë. Përdoret si një produkt dietik 
+                i vlefshëm, një shtesë dietike e dobishme. Rekomandohet për mungesat e vitaminave, 
+                sëmundjet e lëkurës, problemet me traktin gastrointestinal dhe ftohjet.</span>
+            <span></span>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Produkte te ngjashme</h2>
+        <p>100% natyrale</p>
+        <div class="spro-container">
+        <div class="pro" >
+            <img src="/bletariaImages/mjaltegeshtenje.jpg" alt="Mjalte geshtenje" 
+                 onclick="window.location.href=`sproduct2.html`;">
+            <div class="des">
+                <h5 class="shop-item-title">Mjalte geshtenje</h5>
+                <span>Nje vazo 500 gr</span>
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>              
+                  </div>
+                <h4 class="shop-item-price">3000 ALL</h4>
+            </div>
+            <i class="bi bi-cart cart"></i>
+        </div>
+
+        <div class="pro" >
+            <img src="/bletariaImages/qumeshtblete2.jpg" alt="Qumesht blete" 
+                 onclick="window.location.href=`sproduct3.html`;">
+            <div class="des">
+                <h5 class="shop-item-title">Qumesht blete</h5>
+                <span>1 gr cc</span>
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>              
+                  </div>
+                <h4 class="shop-item-price">700 ALL</h4>
+            </div>
+            <i class="bi bi-cart cart"></i>
+        </div>
+
+        </div>
+    </section>
+
+     <!-- Cart -->
+
+    <section id="cart">
+        <a href="#" id="close-cart"><i class="bi bi-x"></i></a>
+        <h2>Cfare ke porositur ne shporten tende?</h2>
+        <p>Le te shohim!</p>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">Produkti</span>
+            <span class="cart-price cart-header cart-column" >Cmimi</span>
+            <span class="cart-quantity cart-header cart-column">Sasia</span>
+        </div>
+
+        <!-- This section covers the entire row -->
+
+        <div class="cart-items">
+            <!-- This div is here just to give the idea of how the added products at the cart row would
+                look like -->
+
+             <!--
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img src="bletariaImages/mjalte lulesh.jpg" alt="Mjalte lulesh">
+                        <span class="cart-item-title">Mjalte lulesh</span>
+                    </div>
+                    <span class="cart-price cart-column cart-item-price">3000 ALL</span>
+                    <div class="cart-item cart-column">
+                        <input class="cart-quantity-input" type="number" value="1"></td>
+                        <i class="bi bi-trash"></i>
+                    </div>
+                </div> 
+            -->
+
+        </div>
+        <!-- This div covers the transport and cart's total -->
+
+        <div class="cart-total">
+            <strong>Transporti</strong>
+            <span>Falas</span>
+            <strong >Totali i kartes</strong> 
+            <span class="cart-total-price">0 All</span>
+        </div>
+        <button class="normal" id="purchase">Porosit</button>
+  </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="bletariaImages/logo2.webp" alt="logo">
+            <h4>Ku mund te na gjeni:</h4>
+            <p><strong>Adresa: </strong>Shtoj i ri, Shkoder</p>
+            <p><strong>Numri i telefonit: </strong>+355 68 574 3469</p>
+            <p><strong>Email: </strong>shpresashytani0@gmail.com</p>
+            <div class="follow">
+            <h4>Na ndiqni ne:</h4>
+            <div class="icons">
+                <a href="https://www.instagram.com/bletariajuaj/"><i class="bi bi-instagram"></i></a>
+            </div>
+            </div>
+        </div>
+
+        <div class="col" id="menu"> 
+            <h4>Menu</h4>
+            <a href="index.html">Kreu</a>
+            <a href="products.html">Produkte</a>
+            <a href="aboutus.html">Rreth Nesh</a>
+            <a href="contactus.html">Kontakt</a>
+        </div>
+
+        <div class="col-pagesa">
+            <h4>Pagesa te siguruara nepermjet:</h4>
+            <img src="bletariaImages/payment.jpg" alt="Menyra te sigurta pagese">
+        </div>
+
+        <div class="copyright">
+            <p>© 2023, Anjeza Xhelilaj - E-commerce website about beekeeping</p>
+        </div>
+    </footer>
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(params) {
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(params) {
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(params) {
+            MainImg.src = smallimg[2].src;
+        }
+    </script>
+
+<script src="script.js">
+</script>
+
+</body>
+</html> 
